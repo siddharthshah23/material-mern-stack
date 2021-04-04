@@ -37,23 +37,10 @@ const Navbar = ({ children, match, history }) => {
               aria-labelledby="main navigation"
               className={classes.navDisplayFlex}
             >
-              <ListItem button>
-                <Link to="/" className={classes.linkText}>
-                  <ListItemText primary="Home"></ListItemText>
-                </Link>
-              </ListItem>
               {!isAuth() && (
                 <ListItem button>
                   <Link to="/login" className={classes.linkText}>
                     <ListItemText primary="Login"></ListItemText>
-                  </Link>
-                </ListItem>
-              )}
-
-              {!isAuth() && (
-                <ListItem button>
-                  <Link to="/signup" className={classes.linkText}>
-                    <ListItemText primary="Signup"></ListItemText>
                   </Link>
                 </ListItem>
               )}

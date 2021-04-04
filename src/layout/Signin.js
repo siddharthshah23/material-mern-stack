@@ -87,7 +87,7 @@ export default function SignIn({ history }) {
           // toast.success(`Hey ${response.data.user.name}, Welcome back!`);
           isAuth() && isAuth().role === "admin"
             ? history.push("/admin")
-            : history.push("/private");
+            : history.push("/dashboard");
         });
 
         setValues({
